@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0A0A0A;
+    color: #EDEDED;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #202020;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0;
+    color: #F0E68C;
+}
+
+#champion-info {
+    width: 50%;
+    text-align: center;
+}
+
+#champion-info input, #champion-info button {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#champion-info button {
+    background-color: #F0E68C;
+    border: none;
+    cursor: pointer;
+}
+
+#champion-info button:hover {
+    background-color: #D4AF37;
+}
+
+#champion-result {
+    margin-top: 20px;
+}
+
+#champion-result img {
+    max-width: 200px;
+}
+
+#champion-result h3 {
+    margin: 10px 0 5px;
+}
+
+#champion-result p {
+    margin: 5px 0;
+}
