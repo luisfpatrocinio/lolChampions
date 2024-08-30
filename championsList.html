@@ -1,43 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>League of Legends API - Campeões</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/championsList.css" />
   </head>
   <body>
     <header>
       <h1>Campeões do League of Legends</h1>
     </header>
-
-    <section id="champion-info">
-      <h2>Informações dos Campeões</h2>
+    <section id="champions-section">
+      <h2>Lista de Campeões</h2>
       <input
         type="text"
-        id="champion-name"
-        placeholder="Digite o nome do campeão"
+        id="champion-filter"
+        placeholder="Digite o nome do campeão..."
       />
-      <button onclick="fetchChampionInfo()">Buscar Campeão</button>
 
-      <div id="champion-result">
-        <!-- Resultado da busca será exibido aqui -->
+      <div id="champions-list">
+        <!-- Lista de campeões será exibida aqui -->
       </div>
-      <div id="champion-skills">
-        <!-- Habilidades do campeão serão exibidas aqui -->
-      </div>
-      <!-- Próximo e Anterior -->
-      <!-- <div>
-        <button onclick="fetchChampionInfo(-1)">Anterior</button>
-        <button onclick="fetchChampionInfo(1)">Próximo</button>
-      </div> -->
-
-      <!-- Botão de voltar para championsList.html-->
-      <a href="championsList.html" class="back-button">Voltar ao Menu</a>
     </section>
-
     <script src="js/script.js"></script>
+    <script src="js/championsList.js"></script>
   </body>
+  <!-- Exibir  rodapé -->
   <footer>
     <!-- Exibir  rodapé -->
     <div id="footer">

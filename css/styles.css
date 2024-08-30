@@ -7,6 +7,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: background-image 1s ease-in-out;
+    min-height: 100vh; /* Ensure body takes up at least the full viewport height */
+    box-sizing: border-box; /* Include padding and border in the total height */
 }
 
 header {
@@ -25,6 +28,9 @@ h1 {
 #champion-info {
     width: 50%;
     text-align: center;
+    background-color: #202020CC;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 #champion-info input, #champion-info button {
@@ -37,6 +43,7 @@ h1 {
     background-color: #F0E68C;
     border: none;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 #champion-info button:hover {
@@ -57,4 +64,30 @@ h1 {
 
 #champion-result p {
     margin: 5px 0;
+}
+
+.skill {
+    padding: 20px;
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #D4AF37;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.back-button:hover {
+    background-color: #F0E68C;
+}
+
+footer {
+    background-color: #202020;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    bottom: 0;
 }
