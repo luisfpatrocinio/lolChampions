@@ -29,8 +29,8 @@ function displayChampionInfo(champion) {
   const resultDiv = document.getElementById("champion-result");
   resultDiv.innerHTML = `
         <img src="https://ddragon.leagueoflegends.com/cdn/14.17.1/img/champion/${champion.name}.png" alt="${champion.name}">
-        <h3>${champion.name}</h3>
-        <p>${champion.title}</p>
+        <h3 class="championName">${champion.name}</h3>
+        <p class="championTitle">${champion.title}</p>
         <p>${champion.lore}</p>
     `;
 
