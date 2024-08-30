@@ -13,3 +13,9 @@ Esta página utiliza a API do League of Legends para exibir informações detalh
 ```bash
 curl -X GET "https://ddragon.leagueoflegends.com/cdn/12.14.1/data/pt_BR/champion/Ahri.json"
 ```
+
+### Funcionalidades da Página
+
+- **Seleção de Campeões com Filtro:** Os usuários podem pesquisar campeões pelo nome para encontrar rapidamente o campeão desejado.
+- **Informações Detalhadas dos Campeões:** A página exibe detalhes como nome, título, história e habilidades de cada campeão.
+- **Habilidades dos Campeões:** A seção de habilidades apresenta as principais habilidades de cada campeão, incluindo seus efeitos e descrições.
