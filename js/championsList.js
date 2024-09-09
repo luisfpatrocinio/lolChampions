@@ -49,7 +49,7 @@ async function updateChampionsList() {
   }
 }
 
-export function getChampionImageById(championData) {
+function getChampionImageById(championData) {
   try {
     let championImage = `https://ddragon.leagueoflegends.com/cdn/14.17.1/img/champion/${championData.image.full}`;
     return championImage;

@@ -101,5 +101,5 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const searchButton = document.getElementById("searchChampionButton");
-  searchButton.addEventListener("click", fetchChampionInfo);
+  if (searchButton) searchButton.addEventListener("click", fetchChampionInfo);
 });
