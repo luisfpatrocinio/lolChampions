@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formação de Times - League of Legends</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Forme seu Time de League of Legends</h1>
+
+    <div id="team-builder">
+      <div id="championsList">
+        <h2>Lista de Campeões</h2>
+        <input
+          type="text"
+          id="champion-filter"
+          placeholder="Digite o nome do campeão..."
+        />
+
+        <div id="champions-list">
+          <!-- Lista de campeões será exibida aqui -->
+        </div>
+      </div>
+
+      <label for="champion-select">Selecione seus campeões:</label>
+      <select id="champion-select" multiple>
+        <!-- Opções serão preenchidas dinamicamente via JavaScript -->
+      </select>
+
+      <button id="calculateButton">Calcular Características do Time</button>
+
+      <div id="team-stats">
+        <h2>Características do Time:</h2>
+        <p id="damage-type"></p>
+        <p id="durability"></p>
+        <p id="control"></p>
+        <p id="utility"></p>
+        <p id="mobility"></p>
+        <p id="difficulty"></p>
+      </div>
+    </div>
+
+    <script type="module" src="js/teamBuilder.js"></script>
+  </body>
+</html>

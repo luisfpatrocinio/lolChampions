@@ -7,7 +7,14 @@ async function fetchChampionInfo() {
     return;
   }
 
-  const url = `https://ddragon.leagueoflegends.com/cdn/14.16.1/data/${language}/champion/${championName}.json`;
+  let version = await fetch(
+    `https://ddragon.leagueoflegends.com/api/versions.json`
+  );
+  version = await version.json();
+  version = version[0];
+  console.log(version);
+
+  const url = `https://ddragon.leagueoflegends.com/cdn/${version}/data/${language}/champion/${championName}.json`;
 
   try {
     const response = await fetch(url);
@@ -92,4 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("champion-name").value = championName;
     fetchChampionInfo();
   }
+
+  const searchButton = document.getElementById("searchChampionButton");
+  searchButton.addEventListener("click", fetchChampionInfo);
 });

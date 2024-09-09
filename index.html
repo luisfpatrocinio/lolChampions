@@ -18,7 +18,7 @@
         id="champion-name"
         placeholder="Digite o nome do campeão"
       />
-      <button onclick="fetchChampionInfo()">Buscar Campeão</button>
+      <button id="searchChampionButton">Buscar Campeão</button>
 
       <div id="champion-result">
         <!-- Resultado da busca será exibido aqui -->
@@ -26,17 +26,12 @@
       <div id="champion-skills">
         <!-- Habilidades do campeão serão exibidas aqui -->
       </div>
-      <!-- Próximo e Anterior -->
-      <!-- <div>
-        <button onclick="fetchChampionInfo(-1)">Anterior</button>
-        <button onclick="fetchChampionInfo(1)">Próximo</button>
-      </div> -->
 
       <!-- Botão de voltar para championsList.html-->
       <a href="championsList.html" class="back-button">Voltar ao Menu</a>
     </section>
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 
     <footer>
       <!-- Exibir rodapé -->

@@ -24,10 +24,12 @@ async function updateChampionsList() {
       for (let champion in champions) {
         const championData = champions[champion];
         if (championData.name.toLowerCase().includes(filter.toLowerCase())) {
+          let championImage = getChampionImageById(championData);
+
           let championUrl = `index.html?champion=${championData.id}`;
           championsList.innerHTML += `
                 <a href="${championUrl}">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/14.17.1/img/champion/${championData.image.full}" alt="${championData.name}">
+                    <img src="${championImage}" alt="${championData.name}">
                 </a>
             `;
         }
@@ -44,5 +46,14 @@ async function updateChampionsList() {
     });
   } catch (error) {
     alert(error.message);
+  }
+}
+
+export function getChampionImageById(championData) {
+  try {
+    let championImage = `https://ddragon.leagueoflegends.com/cdn/14.17.1/img/champion/${championData.image.full}`;
+    return championImage;
+  } catch (error) {
+    console.log("Erro ao obter a imagem do campeão: ", error);
   }
 }

@@ -1,0 +1,14 @@
+{
+  "name": "lolchampions",
+  "version": "1.0.0",
+  "description": "comunicação com api do lol (datadragon)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Felipe Patrocinio",
+  "license": "ISC",
+  "dependencies": {
+    "papaparse": "^5.4.1"
+  }
+}
